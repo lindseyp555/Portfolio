@@ -1,6 +1,10 @@
+"use client"
+import KeyPad from "../components/KeyPad"
+import {useState} from "react";
+
 export default function Page() {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100 p-10">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-10">
         <div className="grid grid-cols-9 grid-rows-9 gap-0">
           {Array.from({ length: 81 }).map((_, i) => {
             const row = Math.floor(i / 9);
@@ -30,6 +34,7 @@ export default function Page() {
             );
           })}
         </div>
+        <KeyPad />
       </div>
     );
   }

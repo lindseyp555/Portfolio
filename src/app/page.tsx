@@ -1,4 +1,5 @@
 import Image from "next/image";
+//@ts-ignore
 import backgroundImage from "./wallpaper.jpg";
 import { Noto_Serif } from "next/font/google"
 import Link from "next/link"
