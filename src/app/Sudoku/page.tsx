@@ -1,6 +1,5 @@
 "use client"
 import KeyPad from "../components/KeyPad"
-import {useState} from "react";
 
 export default function Page() {
     return (
